@@ -1,0 +1,131 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    }
+
+section{
+    background-image: radial-gradient(rgb(108, 78, 163), rgb(41, 21, 58), rgb(32, 25, 37));
+    /* background-image: url('https://htmlcolors.com/gradients-images/335-outer-space.jpg'); */
+}
+
+a, a:hover{
+    text-decoration: none !important;
+  }
+
+/* header{
+    margin-bottom: 150px;
+} */
+
+section{
+    /* margin: 20px 20px 20px 20px; */
+    padding: 5vw 5vw 5vw 5vw;
+}
+
+.top-section{
+    padding-top: 150px;
+}
+
+.nav-link:hover{
+    background-color: darkslategrey;
+    animation-name: up-down;
+    animation-duration: 0.5s;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+  }
+
+p{
+    text-align: center;
+    width: 500px;
+    font-size: large;
+}
+
+.title{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sub-title{
+    margin-top: 8vw;
+    font-size: 40px;
+    /* margin-left:50px; */
+    margin-left:5vw;
+    margin-right: 5vw;
+}
+
+.content{
+    width: auto;
+    margin-top: 5vw;
+    margin-left:10vw;
+    margin-right: 10vw;
+}
+
+.sub-content{
+    font-size: 20px;
+}
+
+.skill_logo{
+    width: 150px;
+    margin-left: 5px;
+    margin-right: 5px;
+    min-height: 150px;
+}
+
+.contact_logo{
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    min-height: 50px;
+}
+
+.bullet_logo{
+    display: inline;
+    padding: 0px;
+    width: 50px;
+}
+
+.bullet{
+    display: inline;
+    vertical-align: middle;
+}
+
+.techstack_logo{
+    max-width: 50px;
+    max-height: 30px;
+}
+
+.url_logo{
+    width: 30px;
+}
+
+.rotate-animation{
+    animation-name: rotate;
+    animation-duration: 0.5s;
+
+}
+
+@keyframes up-down {
+    50%{transform: translate(0px, -5px);}
+}
+
+@keyframes rotate {
+    25%{transform: rotate(30deg);}
+    75%{transform: rotate(-30deg);}
+}
+
+@media (max-width: 600px) {
+    p{
+        text-align: center;
+        width: auto;
+    }
+
+    .content{
+        margin-right: 10vw;
+    }
+    .sub-title{
+        margin-right: 5vw;
+    }
+  }
