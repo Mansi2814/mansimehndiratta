@@ -12,17 +12,8 @@ a, a:hover{
     text-decoration: none !important;
   }
 
-/* header{
-    margin-bottom: 150px;
-} */
-
 section{
-    /* margin: 20px 20px 20px 20px; */
     padding: 5vw 5vw 5vw 5vw;
-}
-
-.top-section{
-    padding-top: 150px;
 }
 
 .nav-link:hover{
@@ -51,7 +42,6 @@ p{
 .sub-title{
     margin-top: 8vw;
     font-size: 40px;
-    /* margin-left:50px; */
     margin-left:5vw;
     margin-right: 5vw;
 }
@@ -85,10 +75,11 @@ p{
     display: inline;
     padding: 0px;
     width: 50px;
+    margin-right: 10px;
 }
 
 .bullet{
-    display: inline;
+    display: inline !important;
     vertical-align: middle;
 }
 
@@ -99,12 +90,22 @@ p{
 
 .url_logo{
     width: 30px;
+    display: inline;
 }
 
 .rotate-animation{
     animation-name: rotate;
     animation-duration: 0.5s;
 
+}
+
+#up-button{
+    position: fixed;
+    right: -2px;
+    bottom: 0px;
+    animation-name: up-down;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes up-down {
@@ -129,3 +130,58 @@ p{
         margin-right: 5vw;
     }
   }
+
+@media (max-width: 1000px){
+    /* #name{
+        display:table !important;
+        margin: auto;
+    }     */
+
+    #header-container{
+        display: block !important;
+        align-items: center;
+    }
+
+    /* .flex-row{
+        padding: 2vw 2vw 2vw 2vw;
+        margin: 2vw 2vw 2vw 2vw;
+    } */
+
+    .nav-item{
+        /* padding: 0vw 2px 0vw 2; */
+        margin: 0px 4px 0px 4px !important;
+        box-sizing: border-box;
+    }
+
+    #header-icons{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around !important;
+    }    
+    
+
+    #cv{
+        /* display:table !important; */
+        /* margin-left: 80% !important; */
+        float: right;
+    }
+
+    #header-span{
+        display:table !important;
+        margin: auto !important;
+    }
+}
+
+@media (max-width: 450px){
+    #name{
+        display:table !important;
+        margin: auto !important;
+    }
+
+    #cv{
+        display:table !important;
+        margin: auto !important;
+        float: none !important;
+    }    
+}
